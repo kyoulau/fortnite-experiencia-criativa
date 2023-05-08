@@ -1,0 +1,207 @@
+/* congiguração geral da página */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* alinhamento dos intens do body */
+body{
+    overflow-x: hidden;
+}
+
+.main-width{
+    width: 1400px;
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+.hero{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background: radial-gradient(circle, rgba(152,179,151,1) 0%, rgba(86,128,170,1) 100%);
+    position: relative;
+}
+
+/* configuracao "GameOn" */
+.hero header .logo h2 a {
+    display: block;
+    font-size: 32px;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+}
+/* configuracoes alinhamento na pagina */
+.hero header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0 30px;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+/* configuracoes estilo ul */
+nav ul li a{
+    text-decoration: none;
+    color: wheat;
+    margin-left: 60px;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: .4s;
+}
+
+/* configuracoes animacao ul */
+nav ul li:not(:last-child) a:hover,
+nav ul li:not(:last-child) a:focus{
+    border-bottom:  2px solid white;
+}
+
+/* configuracao classe active */
+nav ul li.active a{
+    border-bottom: 2px solid white;
+}
+
+/* configuracao brn "download" */
+nav ul li.btn a{
+    background: transparent;
+    color: white;
+    border: 1px solid #f5dca8;
+    padding: 9px 15px;
+    border-radius: 30px;
+    line-height: 1.4;
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 150px;
+}
+
+/* configuracao brn "download" animacao*/
+nav ul li.btn:hover a{
+    border: 1px solid white;
+    color: black;
+    background: white;
+    transition: .4s;
+}
+
+/* configuracao div conteudo */
+.content{
+    padding-top: 120px;
+}
+.content .main-text{
+    position: relative;
+    z-index: 2;
+    margin-bottom: 50px;
+}
+
+/* configuracao #1 trending */
+.content .main-text h6{
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 40px;
+}
+
+/* configuracoes h1  */
+.content .main-text h1{
+    font-size: 100px;
+    line-height: 1;
+    color: rgb(255, 255, 255);
+    margin: 0px 0px 45px;
+    font-family: 'Walter Turncoat', cursive;
+}
+
+/* configuracoes h3  */
+.content .main-text h3{
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+}
+/* configuracoes p estilos  */
+.content .main-text p{
+    max-width: 100%;
+    width: 480px;
+    color: white;
+    line-height: 1.8;
+    font-size: 15px;
+    margin-bottom: 50px;
+}
+
+/* configuracoes p estilos  */
+.content .main-text a{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    background: white;
+    border: 1px solid white;
+    padding: 9px 25px;
+    line-height: 1.4;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* configuracoes texto ao passar mouse  */
+.content .main-text a:hover{
+    transform: scale(1.2);
+    border: 1px solid #f5dca8;
+    background: transparent;
+    color: white;
+    transition: .4s;
+}
+/* configuracoes cta  */
+.content .main-text a.cta{
+    border: 1px solid #f5dca8;
+    color: white;
+    background: transparent;
+    margin-left: 20px;
+}
+/* espacamento socials */
+.content .main-text a.cta i {
+    margin-right: 12px;
+}
+/* configuracao texto passar mouse cime  */
+.content .main-text a.cta:hover{
+    color: black;
+    background: white;
+    border: 1px solid white;
+    transition: .4s;
+}
+/* formatacao social */
+.content .social{
+    margin-top: 100px;
+    position: relative;
+    z-index: 2;
+    padding-bottom: 20px;
+}
+/* estilo socials */
+.content .social a{
+    display: inline-block;
+    color: #f5dcac;
+    margin-right: 25px;
+    font-size: 24px;
+}
+/* animacao ao passar o mouse por cima */
+.content .social a:hover{
+    transform: scale(1.2);
+    transition: .4s;
+    color: white;
+}
+/* configuracoes div imagem */
+.image {
+    position: absolute;
+    width: 100%;
+    height: 85%;
+    bottom: 0;
+    right: 0;
+    text-align: right;
+}
+/* configuracoes img */
+.image img{
+    height: 100%;
+}
